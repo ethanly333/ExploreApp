@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import './App.css'
+import Navbar from './Components/Navbar'
+//import { ProfileModal } from './Components/Modal'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
-      <h1 class="text-3xl text-red-300">Welcome</h1>
+      <Navbar />
     </div>
   )
 }

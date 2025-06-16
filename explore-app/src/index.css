@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@layer components {
+  .navbar {
+    @apply flex justify-between items-center bg-[#ede191] text-[#040316] p-4;
+  }
+
+  .navbar-left .logo {
+    @apply text-[1rem] ml-12 font-bold text-[#040316] no-underline;
+  }
+
+  .navbar-right .nav-links {
+    @apply list-none flex;
+  }
+
+  .navbar-right .nav-links li {
+    @apply mr-4;
+  }
+
+  .profile-btn {
+    @apply bg-[#d39c4a] text-[#040316] px-[25px] py-[12px] text-center no-underline 
+             inline-block text-[16px] duration-[400ms] rounded-[12px] mx-[5px];
+  }
+
+  .account-btn {
+    @apply bg-[#d39c4a] text-[#040316] px-[25px] py-[12px] text-center no-underline 
+             inline-block text-[16px] duration-[400ms] rounded-[12px] mx-[5px];
+  }
+
+  .profile-btn:hover {
+    @apply hover:[box-shadow:0_12px_16px_0_rgba(0,0,0,0.24),_0_17px_50px_0_rgba(0,0,0,0.19)];
+  }
+
+  .account-btn:hover {
+    @apply hover:[box-shadow:0_12px_16px_0_rgba(0,0,0,0.24),_0_17px_50px_0_rgba(0,0,0,0.19)];
+  }
+}
